@@ -1,14 +1,14 @@
 {
-  "name": "bitandbang",
+  "name": "AdithyaNR",
   "version": "1.2.0",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
+  "description": "A personal card for Adithya NR",
   "main": "index.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "adithyanr": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bnb/bitandbang.git"
+    "url": "https://github.com/AdithyaNR/cli-business-card.git"
   },
   "scripts": {
     "prepublish": "npm run build",
@@ -17,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+  "author": "Adithya NR",
   "license": "MIT",
   "files": [
     "bin/card.js",

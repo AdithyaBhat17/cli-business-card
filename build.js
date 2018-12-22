@@ -15,26 +15,28 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('Tierney Cyren /'),
-  handle: chalk.cyan('bitandbang'),
-  work: chalk.white('Senior Cloud Developer Advocate at Microsoft'),
-  twitter: chalk.cyan('https://twitter.com/bitandbang'),
-  github: chalk.cyan('https://github.com/bnb'),
-  linkedin: chalk.cyan('https://linkedin.com/in/bitandbang'),
-  web: chalk.cyan('https://bnb.im'),
-  npx: chalk.white('npx bitandbang'),
+  name: chalk.white('Adithya NR /'),
+  work: chalk.white('Full Stack Designer'),
+  web: chalk.cyan('https://adithyabhat.com'),
+  dribbble: chalk.cyan('https://dribbble.com/adithyanr'),
+  twitter: chalk.cyan('https://twitter.com/Adithyabhat9'),
+  github: chalk.cyan('https://github.com/AdithyaBhat17'),
+  linkedin: chalk.cyan('https://linkedin.com/in/adithya-nr'),
+  npx: chalk.white('npx adithyanr'),
   labelWork: chalk.white.bold('      Work:'),
+  labelWeb: chalk.white.bold('       Web:'),
+  labelDribbble: chalk.white.bold('       Dribbble:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
   labelLinkedIn: chalk.white.bold('  LinkedIn:'),
-  labelWeb: chalk.white.bold('       Web:'),
   labelCard: chalk.white.bold('      Card:')
 }
 
 // Actual strings we're going to output
 const newline = '\n'
-const heading = `${data.name} ${data.handle}`
+const heading = `${data.name}`
 const working = `${data.labelWork}  ${data.work}`
+const dribbbling = `${data.labelDribbble}  ${data.dribbble}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
 const githubing = `${data.labelGitHub}  ${data.github}`
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
@@ -42,6 +44,6 @@ const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-const output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
+const output = heading + newline + newline + working + newline + dribbbling + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
 
 fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, options)))
