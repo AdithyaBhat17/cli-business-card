@@ -23,13 +23,13 @@ const data = {
   github: chalk.cyan('https://github.com/AdithyaBhat17'),
   linkedin: chalk.cyan('https://linkedin.com/in/adithya-nr'),
   npx: chalk.white('npx adithyanr'),
-  labelWork: chalk.white.bold('      Work:'),
-  labelWeb: chalk.white.bold('       Web:'),
-  labelDribbble: chalk.white.bold('       Dribbble:'),
-  labelTwitter: chalk.white.bold('   Twitter:'),
-  labelGitHub: chalk.white.bold('    GitHub:'),
-  labelLinkedIn: chalk.white.bold('  LinkedIn:'),
-  labelCard: chalk.white.bold('      Card:')
+  labelWork: chalk.white.bold('Work:'),
+  labelWeb: chalk.white.bold('Web:'),
+  labelDribbble: chalk.white.bold('Dribbble:'),
+  labelTwitter: chalk.white.bold('Twitter:'),
+  labelGitHub: chalk.white.bold('GitHub:'),
+  labelLinkedIn: chalk.white.bold('LinkedIn:'),
+  labelCard: chalk.white.bold('Card:')
 }
 
 // Actual strings we're going to output
@@ -44,6 +44,6 @@ const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-const output = heading + newline + newline + working + newline + dribbbling + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
+const output = heading + newline + newline + working + newline + webing + newline + dribbbling + newline + twittering + newline + githubing + newline + linkedining + newline + newline + carding
 
 fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, options)))
