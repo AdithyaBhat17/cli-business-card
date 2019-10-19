@@ -19,7 +19,7 @@ const data = {
   work: chalk.white('Full Stack Designer'),
   web: chalk.cyan('https://adithyabhat.com'),
   dribbble: chalk.cyan('https://dribbble.com/adithyanr'),
-  twitter: chalk.cyan('https://twitter.com/Adithyabhat9'),
+  twitter: chalk.cyan('https://twitter.com/adithya__nr'),
   github: chalk.cyan('https://github.com/AdithyaBhat17'),
   linkedin: chalk.cyan('https://linkedin.com/in/adithya-nr'),
   npx: chalk.white('npx adithyanr'),
